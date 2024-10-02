@@ -1,0 +1,58 @@
+input.form-control {
+    border-radius: 20px;
+    height: 69px;
+    width: 100%;
+    padding-left: 21px;
+    border: 1px solid var(--color-orange);
+    line-height: 100%;
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--color-orange);
+    }
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+
+    & input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--color-gray);
+        appearance: none;
+        border-radius: 2px;
+        flex-shrink: 0;
+        display: block;
+        position: relative;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            display: block;
+            content: " ";
+            background: var(--color-orange);
+            width: 12px;
+            height: 12px;
+            transform: scale(0);
+            top: 2px;
+            left: 2px;
+            border-radius: 2px;
+            @include transition(all, 0.2s);
+        }
+
+        &:checked:after {
+            transform: scale(1);
+        }
+    }
+
+    & label {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-black);
+
+        & a {
+            color: var(--color-orange);
+        }
+    }
+}

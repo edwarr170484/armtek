@@ -1,0 +1,61 @@
+.main-banner {
+    background-image: url('../img/main-banner-1.png'), url('../img/main-banner-2.png');
+    background-position: center top, center top;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 210px;
+
+    & .main-header {
+        font-family: $font-play;
+        padding-bottom: 380px;
+
+
+        & h1 {
+            font-size: 64px;
+            line-height: 72px;
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            font-size: 60px;
+            line-height: 90px;
+            text-transform: uppercase;
+            font-family: $font-druk;
+        }
+
+        & p {
+            font-size: 48px;
+            line-height: 72px;
+            margin: 0;
+            padding: 0;
+            margin-top: 36px;
+        }
+    }
+
+    & .main-carousel {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        & .owl-item div {
+            border-radius: 100px 0 0 0;
+
+            & img {
+                border-radius: 100px 0 0 0;
+            }
+        }
+
+        & #main-slider {
+            z-index: 99;
+            bottom: 95px;
+
+            & button svg path {
+                fill: var(--color-white);
+            }
+
+            & button.disabled svg path {
+                fill: var(--color-gray);
+            }
+        }
+    }
+}

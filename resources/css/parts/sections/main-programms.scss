@@ -1,0 +1,63 @@
+.main-programms {
+    margin-bottom: 90px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 3;
+
+    & .container {
+        display: block;
+    }
+
+    & figcaption {
+        border: 1px solid var(--color-braun-light);
+    }
+
+    & .owl-navigation {
+        bottom: -14px;
+    }
+
+    & .programms-navigation {
+        display: inline-flex;
+        background-color: var(--color-white);
+        border-radius: 100px;
+        margin-bottom: 79px;
+
+        & a {
+            font-family: $font-play;
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 700;
+            color: var(--color-gray);
+            display: flex;
+            justify-content: center;
+            padding: 45px 83px;
+            border-radius: 100px;
+            white-space: nowrap;
+            width: 550px;
+            @include transition(all, 0.2s);
+
+            &.active {
+                background-color: var(--color-orange);
+                color: var(--color-white);
+            }
+        }
+    }
+
+    & .programms-tabs {
+        position: relative;
+
+        & .programms-tab {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            @include transition(opacity, 0.2s);
+
+            &.active {
+                position: relative;
+                opacity: 1;
+            }
+        }
+    }
+}

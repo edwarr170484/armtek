@@ -1,0 +1,24 @@
+.color-orange {
+    color: var(--color-orange);
+}
+
+.bg-orange {
+    background-color: var(--color-orange);
+}
+
+.orange-frame {
+    border: 1px solid var(--color-orange);
+}
+
+.error {
+    border: 1px solid var(--color-error) !important;
+    box-shadow: 0px 0px 10px 0px var(--color-error);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.display-block {
+    display: block;
+}

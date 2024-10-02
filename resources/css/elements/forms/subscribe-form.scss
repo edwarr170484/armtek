@@ -1,0 +1,37 @@
+.subscribe-form {
+    background: var(--color-white);
+    border-radius: 50px;
+    font-family: $font-open;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-black-medium);
+    padding: 30px 50px;
+    width: 1245px;
+    margin: 0 auto;
+    background: url('../img/smartphone.png') 100% 100% no-repeat var(--color-white);
+
+    & h3 {
+        font-family: $font-play;
+        line-height: 22px;
+        margin: 0;
+        padding: 0;
+    }
+
+    & .form-rows {
+        width: 100%;
+        max-width: 724px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & .form-row:last-child {
+            margin-top: 10px;
+        }
+    }
+
+    & button {
+        font-family: $font-play;
+        font-weight: 700;
+        padding: 5.5px 40px 4.5px;
+    }
+}

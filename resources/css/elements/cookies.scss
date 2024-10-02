@@ -1,0 +1,37 @@
+.cookies {
+    position: fixed;
+    bottom: 11px;
+    left: 30px;
+    border-radius: 10px;
+    background: #424141;
+    padding: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 7px;
+    color: var(--color-white);
+    font-family: $font-play;
+    max-width: 620px;
+
+    & a {
+        text-decoration: underline;
+        color: var(--color-white);
+    }
+
+    & button {
+        font-weight: 700;
+        color: var(--color-black);
+        border: none;
+        background: var(--color-white);
+        border-radius: 10px;
+        padding: 12px 24px;
+        cursor: pointer;
+    }
+
+    & p {
+        margin: 0;
+        padding: 0;
+    }
+}

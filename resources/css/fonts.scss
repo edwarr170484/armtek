@@ -1,0 +1,16 @@
+@import url(https://fonts.bunny.net/css?family=play:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Druk Cyr';
+    src: local('../fonts/drukwidecyr-bold'), local('drukwidecyr-bold'),
+        url('../fonts/drukwidecyr-bold.woff2') format('woff2'),
+        url('../fonts/drukwidecyr-bold.woff') format('woff'),
+        url('../fonts/drukwidecyr-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+$font-play: 'Play', sans-serif;
+$font-open: 'Open Sans', sans-serif;
+$font-druk: 'Druk Cyr', sans-serif;

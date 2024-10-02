@@ -1,0 +1,33 @@
+@import './payments.scss';
+@import './footer-menu.scss';
+@import './footer-contacts.scss';
+@import './footer-socials.scss';
+
+footer {
+    font-family: $font-play;
+    background-color: var(--color-black-medium);
+    padding-top: 269px;
+    padding-bottom: 64px;
+    margin-top: -230px;
+
+    & .common-info {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-white);
+        font-size: 22px;
+        line-height: 33px;
+        font-family: $font-play;
+
+        & p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    & .logo {
+        & img {
+            width: 172px;
+            margin-bottom: 30px;
+        }
+    }
+}

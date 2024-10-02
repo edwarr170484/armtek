@@ -1,0 +1,19 @@
+.scroll-up {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -400px;
+    right: 72px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

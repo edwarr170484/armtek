@@ -1,0 +1,50 @@
+@import 'owl.carousel';
+
+@import './vendor/normalize.css';
+@import './fonts.scss';
+@import './variables.scss';
+@import './layout.scss';
+@import './common.scss';
+@import './mixins/mixins.scss';
+
+@import './parts/header/header.scss';
+@import './parts/footer/footer.scss';
+@import './parts/sections/main-banner.scss';
+@import './parts/sections/main-programms.scss';
+@import './parts/sections/main-courses.scss';
+@import './parts/sections/main-sales.scss';
+@import './parts/price.scss';
+
+@import './elements/buttons.scss';
+@import './elements/forms/forms.scss';
+@import './elements/forms/subscribe-form.scss';
+@import './elements/controls.scss';
+@import './elements/headers.scss';
+@import './elements/owl-carousel.scss';
+@import './elements/lists.scss';
+@import './elements/scroll-up.scss';
+@import './elements/cookies.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-open;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-black-medium);
+    padding-top: 121px;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: $font-play;
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+}
+
+::placeholder {
+    color: var(--color-gray);
+}

@@ -1,0 +1,30 @@
+.footer-menu {
+    display: flex;
+    gap: 80px;
+    margin-left: auto;
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 260px;
+    }
+
+    & ul:first-child {
+        width: 146px;
+
+        & a {
+            line-height: 22px;
+        }
+    }
+
+    & ul:last-child {
+        margin-top: -6px;
+    }
+
+    & a {
+        font-size: 22px;
+        line-height: 33px;
+        color: var(--color-white);
+    }
+}
