@@ -1,0 +1,41 @@
+.tab-navs {
+    &.button-navs {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        margin-bottom: 50px;
+
+        & .tab-nav {
+            color: var(--color-black-medium);
+            border: 1px solid var(--color-orange);
+
+            &.active {
+                background: var(--color-orange);
+                color: var(--color-white);
+            }
+
+            &.button {
+                padding: 10px 40px;
+                font-family: $font-play;
+            }
+        }
+    }
+}
+
+.tabs {
+    position: relative;
+
+    & .tab {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        @include transition(all, 0.2s);
+
+        &.active {
+            opacity: 1;
+            position: relative;
+        }
+    }
+}

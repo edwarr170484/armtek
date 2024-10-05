@@ -12,6 +12,7 @@ import './common';
 import './sliders';
 import './tabs';
 import './scroll';
+import './dropdown';
 
 window.Alpine = Alpine;
 

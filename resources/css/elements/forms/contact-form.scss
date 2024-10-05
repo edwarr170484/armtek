@@ -1,0 +1,14 @@
+.contact-form {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 215px;
+
+    & .form-row {
+        gap: 50px;
+
+        &:last-child {
+            margin-top: 24px;
+            gap: 14px;
+        }
+    }
+}

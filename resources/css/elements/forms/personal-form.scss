@@ -1,0 +1,18 @@
+.personal-form {
+    padding: 40px 50px;
+    border-radius: 50px;
+
+    & h3 {
+        font-family: $font-play;
+    }
+
+    & .button {
+        padding: 14px 37px;
+        margin: 0 auto;
+    }
+
+    & .form-groups {
+        width: 50%;
+        flex-shrink: 0;
+    }
+}

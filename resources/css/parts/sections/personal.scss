@@ -1,0 +1,50 @@
+.personal {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    & h3 {
+        font-family: $font-play;
+    }
+}
+
+.personal-menu {
+    width: 30%;
+    flex-shrink: 0;
+
+    & .dropdown-title {
+        & a {
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 700;
+            font-family: $font-play;
+            color: var(--color-black-medium);
+            padding-top: 25px;
+            padding-bottom: 25px;
+            display: block;
+
+            &.active {
+                color: var(--color-orange);
+            }
+        }
+
+    }
+
+    & .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        padding-right: 40%;
+
+        & a {
+            color: var(--color-black-medium);
+        }
+    }
+
+    & .personal-menu-bottom {
+        margin-top: 150px;
+
+        & a {
+            color: var(--color-orange);
+        }
+    }
+}

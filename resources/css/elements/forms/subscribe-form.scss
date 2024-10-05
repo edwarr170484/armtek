@@ -9,6 +9,8 @@
     width: 1245px;
     margin: 0 auto;
     background: url('../img/smartphone.png') 100% 100% no-repeat var(--color-white);
+    position: relative;
+    z-index: 2;
 
     & h3 {
         font-family: $font-play;
@@ -18,11 +20,7 @@
     }
 
     & .form-rows {
-        width: 100%;
         max-width: 724px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
 
         & .form-row:last-child {
             margin-top: 10px;

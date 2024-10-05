@@ -13,17 +13,30 @@
 @import './parts/sections/main-programms.scss';
 @import './parts/sections/main-courses.scss';
 @import './parts/sections/main-sales.scss';
+@import './parts/sections/main-subscribe.scss';
 @import './parts/price.scss';
+@import './parts/sections/about.scss';
+@import './parts/sections/personal.scss';
+@import "./parts/sections/payment-section.scss";
+@import './parts/sections/contact-section.scss';
 
 @import './elements/buttons.scss';
 @import './elements/forms/forms.scss';
 @import './elements/forms/subscribe-form.scss';
+@import './elements/forms/personal-form.scss';
+@import './elements/forms/contact-form.scss';
 @import './elements/controls.scss';
 @import './elements/headers.scss';
 @import './elements/owl-carousel.scss';
 @import './elements/lists.scss';
 @import './elements/scroll-up.scss';
 @import './elements/cookies.scss';
+@import './elements/breadcrumbs.scss';
+@import './elements/page-text.scss';
+@import './elements/dropdown.scss';
+@import './elements/tabs.scss';
+@import './elements/download-list.scss';
+
 
 * {
     box-sizing: border-box;

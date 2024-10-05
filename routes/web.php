@@ -3,8 +3,20 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\ContactController;
+
+Route::controller(PageController::class)->group(function () {
+    Route::get("/", "index");
+    Route::get("/about", "about");
+    Route::get("/personal", "personal");
+    Route::get("/oferta", "oferta");
+    Route::get("/cookie", "cookie");
+    Route::get("/payments", "payments");
+});
+
+Route::controller(ContactController::class)->group(function(){
+    Route::get("/contacts", "contacts");
 });
 
 Route::get('/dashboard', function () {

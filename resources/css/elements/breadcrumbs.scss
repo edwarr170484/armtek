@@ -1,0 +1,36 @@
+.breadcrumbs {
+    padding-bottom: 33px;
+
+    & ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        & li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            & a {
+                color: var(--color-gray);
+                font-family: $font-play;
+                font-size: 22px;
+            }
+
+            & svg {
+                margin-top: 3px;
+            }
+
+            &:last-child {
+                & a {
+                    font-weight: 700;
+                    color: var(--color-black-medium);
+                }
+
+                & svg {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -9,6 +9,16 @@
     margin-top: 0;
     margin-bottom: 0;
 
+    &.guest-tools {
+        & a {
+            font-weight: 400;
+        }
+
+        & .button {
+            font-weight: 700;
+        }
+    }
+
     & li {
         padding: 10px 0;
     }

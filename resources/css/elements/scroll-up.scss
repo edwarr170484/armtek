@@ -1,5 +1,5 @@
 .scroll-up {
-    position: absolute;
+    position: fixed;
     width: 90px;
     height: 90px;
     background: var(--color-orange);
@@ -9,9 +9,10 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    top: -400px;
+    bottom: 20px;
     right: 72px;
     display: none;
+    z-index: 9;
 
     &.active {
         display: block;

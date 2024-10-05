@@ -1,6 +1,5 @@
-input.form-control {
+.form-control {
     border-radius: 20px;
-    height: 69px;
     width: 100%;
     padding-left: 21px;
     border: 1px solid var(--color-orange);
@@ -10,6 +9,16 @@ input.form-control {
         outline: none;
         border: 1px solid var(--color-orange);
     }
+}
+
+input.form-control {
+    height: 69px;
+}
+
+textarea.form-control {
+    min-height: 220px;
+    height: 100%;
+    padding: 18px 39px;
 }
 
 .checkbox {
@@ -53,6 +62,22 @@ input.form-control {
 
         & a {
             color: var(--color-orange);
+        }
+    }
+}
+
+.svg-checkbox {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    & svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:last-child {
+            display: none;
         }
     }
 }

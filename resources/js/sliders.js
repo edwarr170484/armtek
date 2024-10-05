@@ -93,4 +93,14 @@ $(document).ready(function () {
         navText: navButtons,
         navContainer: $("#main-slider")
     });
+
+    $('.team-slider').owlCarousel({
+        center: true,
+        loop: true,
+        margin: 50,
+        nav: true,
+        items: 3,
+        navText: navButtons,
+        navContainer: $("#team-slider")
+    });
 });

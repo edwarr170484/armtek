@@ -1,0 +1,51 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20%;
+    cursor: pointer;
+
+    & svg {
+        @include transition(all, 0.2s);
+    }
+
+    &.active {
+        & a {
+            color: var(--color-orange);
+        }
+
+        & svg {
+            transform: rotate(180deg);
+
+            &:last-child {
+                display: block;
+                margin-left: 10px;
+            }
+        }
+
+        & .svg-checkbox {
+            & svg {
+                transform: rotate(0);
+            }
+        }
+
+        &+.dropdown-content {
+            transform: scaleY(1);
+            height: auto;
+            overflow: auto;
+        }
+    }
+}
+
+.dropdown-content {
+    overflow: hidden;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    @include transition(all, 0.2s);
+}
