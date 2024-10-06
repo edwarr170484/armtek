@@ -13,6 +13,7 @@ import './sliders';
 import './tabs';
 import './scroll';
 import './dropdown';
+import './controls';
 
 window.Alpine = Alpine;
 

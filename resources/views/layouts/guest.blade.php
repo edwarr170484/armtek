@@ -9,17 +9,31 @@
 
         @vite(['resources/css/app.scss'])
     </head>
-    <body>
+    <body class="guest">
        <header>
             <div class="container">
                 <a href="/" class="logo">
                     <img src="/img/logo.png" alt="Учебный центр Армтек">
                 </a>
-                <ul class="header-tools guest-tools">
-                    <li><a href="" class="color-black">Уже есть аккаунт?</a></li>
-                    <li><a href="" class="button button-framed color-gray">Войти</a></li>
-                </ul>
+                @if(request()->routeIs('login'))
+                    <ul class="header-tools">
+                        <li><a href="{{ route('register') }}" class="button bg-orange">Регистрация</a></li>
+                    </ul>
+                @else
+                    <ul class="header-tools guest-tools">
+                        <li><a class="color-black">Уже есть аккаунт?</a></li>
+                        <li><a href="{{ route('login') }}" class="button button-framed color-gray">Войти</a></li>
+                    </ul>
+                @endif
             </div>
         </header>
+        <main>
+            {{ $slot }}
+        </main>
+        <div class="cookies">
+            <p>Мы используем <a href="">cookies</a>, чтобы сохранять ваш поиск, рекомендовать полезное и создавать другие удобства на сайте</p>
+            <button id="close-cookies">Окей</button>
+        </div>
+        @vite(['resources/js/app.js'])
     </body>
 </html>

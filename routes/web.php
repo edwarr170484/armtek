@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CatalogController;
 
 Route::controller(PageController::class)->group(function () {
     Route::get("/", "index");
@@ -17,6 +18,10 @@ Route::controller(PageController::class)->group(function () {
 
 Route::controller(ContactController::class)->group(function(){
     Route::get("/contacts", "contacts");
+});
+
+Route::controller(CatalogController::class)->group(function(){
+    Route::get("/courses/{name?}", "courses");
 });
 
 Route::get('/dashboard', function () {

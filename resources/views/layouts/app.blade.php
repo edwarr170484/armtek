@@ -79,7 +79,7 @@
                 <nav class="footer-menu">
                     <ul>
                         <li><a href="">Акции</a></li>
-                        <li><a href="">Курсы</a></li>
+                        <li><a href="/courses">Курсы</a></li>
                         <li><a href="">Тренинги</a></li>
                         <li><a href="/contacts">Контакты</a></li>
                         <li><a href="/payments">Оплата</a></li>

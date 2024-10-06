@@ -1,0 +1,130 @@
+@import './filter.scss';
+@import './cources-cards.scss';
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.card {
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid var(--color-orange);
+    padding: 40px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+
+    & .card-title {
+        font-weight: 700;
+        font-family: $font-play;
+        padding-right: 50px;
+    }
+
+    & .card-content {
+        padding-top: 21px;
+        padding-bottom: 38px;
+    }
+
+    & .card-image {
+        flex-shrink: 1;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+
+        & img {
+            width: 250px;
+            height: 308px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+    }
+
+    & .card-description {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .card-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: flex-end;
+        margin-top: auto;
+
+        & .button {
+            font-family: $font-play;
+            padding: 4.5px 15px 5.5px;
+            font-weight: 700;
+            text-align: center;
+            width: 50%;
+            border: 1px solid var(--color-orange);
+
+            &.details {
+                background: var(--color-white);
+                color: var(--color-black-medium);
+            }
+
+            &.cart {
+                background: var(--color-orange);
+                color: var(--color-white);
+            }
+        }
+    }
+
+    & .card-price {
+        font-family: $font-play;
+        color: var(--color-black-medium);
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+
+        &.inline {
+            flex-direction: row;
+        }
+
+        & .price {
+            text-transform: uppercase;
+            color: var(--color-orange);
+        }
+    }
+
+    & .card-like {
+        position: absolute;
+        top: 35px;
+        right: 45px;
+        width: 50px;
+        height: 44px;
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.show-more {
+    font-family: $font-play;
+    padding: 14px;
+    font-weight: 700;
+    text-align: center;
+    width: 335px;
+    border: 1px solid var(--color-orange);
+    background: var(--color-white);
+    color: var(--color-black-medium);
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}

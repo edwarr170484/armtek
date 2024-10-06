@@ -9,6 +9,12 @@
         outline: none;
         border: 1px solid var(--color-orange);
     }
+
+    &.error {
+        color: var(--color-red);
+        background: var(--color-red-medium);
+        border: 1px solid var(--color-orange);
+    }
 }
 
 input.form-control {
@@ -28,7 +34,7 @@ textarea.form-control {
     & input[type="checkbox"] {
         width: 18px;
         height: 18px;
-        border: 1px solid var(--color-gray);
+        border: 2px solid var(--color-gray);
         appearance: none;
         border-radius: 2px;
         flex-shrink: 0;
@@ -40,18 +46,18 @@ textarea.form-control {
             position: absolute;
             display: block;
             content: " ";
-            background: var(--color-orange);
-            width: 12px;
-            height: 12px;
-            transform: scale(0);
-            top: 2px;
+            width: 16px;
+            height: 4px;
             left: 2px;
+            top: -1px;
+            transform: rotate(-45deg);
             border-radius: 2px;
-            @include transition(all, 0.2s);
         }
 
         &:checked:after {
-            transform: scale(1);
+            border-left: 2px solid var(--color-orange);
+            border-bottom: 2px solid var(--color-orange);
+            background: var(--color-white);
         }
     }
 
@@ -80,4 +86,17 @@ textarea.form-control {
             display: none;
         }
     }
+}
+
+#showPassword {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
 }

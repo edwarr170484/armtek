@@ -2,4 +2,21 @@
     max-width: $max-width;
     display: flex;
     margin: 0 auto;
+
+    & .page-banner {
+        border-radius: 30px;
+        padding-left: 105px;
+
+        &:before {
+            border-radius: 30px;
+        }
+    }
+}
+
+.support-link {
+    text-align: center;
+    color: var(--color-black-medium);
+    text-align: center;
+    display: block;
+    margin-top: 30px;
 }
