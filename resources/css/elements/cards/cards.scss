@@ -18,6 +18,7 @@
     display: flex;
     align-items: stretch;
     gap: 30px;
+    background: var(--color-white);
 
     & .card-title {
         font-weight: 700;
@@ -94,6 +95,16 @@
         & .price {
             text-transform: uppercase;
             color: var(--color-orange);
+            letter-spacing: 0.02em;
+
+            &.price-old {
+                font-size: 20px;
+                line-height: 30px;
+                color: var(--color-gray);
+                text-decoration: line-through;
+                font-weight: normal;
+
+            }
         }
     }
 
@@ -112,6 +123,13 @@
     }
 }
 
+.cards-load {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
 .show-more {
     font-family: $font-play;
     padding: 14px;
@@ -123,8 +141,11 @@
     color: var(--color-black-medium);
     margin: 0 auto;
     border-radius: 30px;
-    display: flex;
     justify-content: center;
     margin-top: 90px;
     margin-bottom: 50px;
+
+    &.sales {
+        margin-bottom: 90px;
+    }
 }

@@ -38,4 +38,9 @@ class PageController extends Controller
     {
         return view('page.payments', ['breadcrumbs' => ['/payments' => 'Оплата'], 'title' => 'Оплата']);
     }
+
+    public function sales(Request $request): View
+    {
+        return view('page.sales', ['breadcrumbs' => ['/sales' => 'Акции'], 'title' => '', 'image' => '/img/banners/sales-banner.jpg']);
+    }
 }

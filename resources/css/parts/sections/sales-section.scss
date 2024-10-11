@@ -1,0 +1,28 @@
+.sales-section {
+    position: relative;
+
+    & .breadcrumbs {
+        background: var(--color-white);
+        position: relative;
+        z-index: 1;
+    }
+
+    & .page-banner {
+        min-height: 380px;
+    }
+
+    backdrop-filter: blur(30px);
+
+    &:before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 350px;
+        background: url('../img/sales-bg.png') center center no-repeat var(--color-white);
+        background-size: cover;
+        filter: blur(10px);
+    }
+}

@@ -8,6 +8,8 @@ footer {
     background-color: var(--color-black-medium);
     padding-top: 68px;
     padding-bottom: 64px;
+    position: relative;
+    z-index: 3;
 
     & .common-info {
         display: flex;

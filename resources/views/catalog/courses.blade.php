@@ -177,7 +177,9 @@
                 </div>
             </div>
         </div>
-        <button class="show-more">Показать еще</button>
+        <div class="cards-load">
+             <button class="show-more">Показать еще</button>
+        </div>
         <div class="contact-form">
             <form action="" class="common-form">
                 <h3 class="form-header">Не нашли,  что искали? Напишите нам, мы поможем!</h3>
