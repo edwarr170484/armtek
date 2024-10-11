@@ -1,0 +1,27 @@
+.trainings-cards {
+    display: flex !important;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 90px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.trainig-card {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+
+    &>img {
+        max-width: 380px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+    & .card-buttons {
+        & .button {
+            width: 250px !important;
+            flex-shrink: 0;
+        }
+    }
+}

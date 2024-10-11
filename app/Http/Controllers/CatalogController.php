@@ -23,4 +23,19 @@ class CatalogController extends Controller
                                                             'image' => '/img/banners/courses-banner.png']);
         }
     }
+
+    public function trainings(?string $name = null): View
+    {
+        if($name){
+            return view('catalog.training', ['breadcrumbs' => [
+                                                            '/trainings' => 'Тренинги', '/trainings/training' => 'Подбор автозапчастей легкового автомобиля. Базовый уровень'], 
+                                                            'title' => 'Подбор автозапчастей легкового автомобиля. Базовый уровень', 
+                                                            'image' => '/img/banners/training-banner.png']);
+        } else {
+            return view('catalog.trainings', ['breadcrumbs' => [
+                                                            '/trainings' => 'Тренинги'], 
+                                                            'title' => 'Обучение, которое помогает в бизнесе', 
+                                                            'image' => '/img/banners/trainings-banner.png']);
+        }
+    }
 }

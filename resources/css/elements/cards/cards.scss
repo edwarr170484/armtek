@@ -1,5 +1,6 @@
 @import './filter.scss';
 @import './cources-cards.scss';
+@import './trainings-cards.scss';
 
 .cards {
     display: grid;
@@ -43,12 +44,36 @@
             object-fit: cover;
             border-radius: 50px;
         }
+
+        & .card-textpane {
+            width: 415px;
+            flex-shrink: 0;
+            border: 1px solid var(--color-orange);
+            background: var(--color-braun-light);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            height: 100%;
+            padding: 15px 34px;
+        }
     }
 
     & .card-description {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
+    }
+
+    & .card-bottom {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
     }
 
     & .card-buttons {
@@ -90,6 +115,8 @@
 
         &.inline {
             flex-direction: row;
+            align-items: center;
+            gap: 13px;
         }
 
         & .price {

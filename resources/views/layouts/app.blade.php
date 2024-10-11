@@ -21,7 +21,7 @@
                         <li>
                             <a href="">Услуги</a>
                             <ul>
-                                <li><a href="">Тренинги</a></li>
+                                <li><a href="/trainings">Тренинги</a></li>
                                 <li><a href="/courses">Электронные курсы</a></li>
                                 <li><a href="">Комплексные программы</a></li>
                             </ul>
@@ -82,9 +82,9 @@
                 </div>
                 <nav class="footer-menu">
                     <ul>
-                        <li><a href="">Акции</a></li>
+                        <li><a href="/sales">Акции</a></li>
                         <li><a href="/courses">Курсы</a></li>
-                        <li><a href="">Тренинги</a></li>
+                        <li><a href="/trainings">Тренинги</a></li>
                         <li><a href="/contacts">Контакты</a></li>
                         <li><a href="/payments">Оплата</a></li>
                         <li><a href="">Аренда</a></li>
