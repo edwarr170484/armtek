@@ -24,6 +24,7 @@ Route::controller(ContactController::class)->group(function(){
 Route::controller(CatalogController::class)->group(function(){
     Route::get("/courses/{name?}", "courses");
     Route::get("/trainings/{name?}", "trainings");
+    Route::get("/programs/{name?}", "programs");
     Route::get("/certificates","certificates");
 });
 

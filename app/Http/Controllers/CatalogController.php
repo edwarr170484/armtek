@@ -39,6 +39,21 @@ class CatalogController extends Controller
         }
     }
 
+    public function programs(?string $name = null): View
+    {
+        if($name){
+            return view('catalog.program', ['breadcrumbs' => [
+                                                            '/trainings' => 'Тренинги', '/trainings/training' => 'Подбор автозапчастей легкового автомобиля. Базовый уровень'], 
+                                                            'title' => 'Подбор автозапчастей легкового автомобиля. Базовый уровень', 
+                                                            'image' => '/img/banners/training-banner.png']);
+        } else {
+            return view('catalog.programs', ['breadcrumbs' => [
+                                                            '/trainings' => 'Комплексные программы'], 
+                                                            'title' => 'Сделайте первый шаг на пути развития своего бизнеса', 
+                                                            'image' => '/img/banners/programs-banner.jpg']);
+        }
+    }
+
     public function certificates(Request $request): View
     {
         return view('catalog.certificates', ['breadcrumbs' => [

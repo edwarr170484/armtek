@@ -23,7 +23,7 @@
                             <ul>
                                 <li><a href="/trainings">Тренинги</a></li>
                                 <li><a href="/courses">Электронные курсы</a></li>
-                                <li><a href="">Комплексные программы</a></li>
+                                <li><a href="/programs">Комплексные программы</a></li>
                             </ul>
                         </li>
                         <li>
