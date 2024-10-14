@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li><a href="">Аренда</a></li>
-                        <li><a href="">Подарочные сертификаты</a></li>
+                        <li><a href="/certificates">Подарочные сертификаты</a></li>
                     </ul>
                 </nav>
                 <ul class="header-tools">

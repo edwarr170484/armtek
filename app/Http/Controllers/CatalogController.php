@@ -38,4 +38,12 @@ class CatalogController extends Controller
                                                             'image' => '/img/banners/trainings-banner.png']);
         }
     }
+
+    public function certificates(Request $request): View
+    {
+        return view('catalog.certificates', ['breadcrumbs' => [
+                                                            '/certificates' => 'Подарочные сертификаты'], 
+                                                            'title' => '«Определенность цели является отправной точкой всех достижений», – У. Клемент Стоун', 
+                                                            'image' => '/img/banners/certificates-banner.png']);
+    }
 }

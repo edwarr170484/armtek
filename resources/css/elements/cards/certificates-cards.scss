@@ -1,0 +1,62 @@
+.certificates-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 145px;
+
+
+    &.cards {
+        display: flex;
+        column-gap: 120px;
+        row-gap: 70px;
+    }
+
+    & .card {
+        padding: 40px 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 33.33333%;
+        flex-shrink: 0;
+        gap: 0;
+
+        & .card-title {
+            margin-bottom: 30px;
+        }
+
+        & .card-image {
+            & img {
+                border-radius: 0;
+                width: 100%;
+                max-width: 435px;
+                height: auto;
+            }
+        }
+
+        & .card-title {
+            padding-right: 0;
+            align-self: flex-start;
+        }
+
+        & .card-price {
+            &.inline {
+                justify-content: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                gap: 30px;
+            }
+        }
+
+        & .card-buttons {
+            justify-content: center;
+            width: 100%;
+            margin-top: 0;
+
+            & .button {
+                width: 100%;
+                max-width: 268px;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
