@@ -40,6 +40,11 @@
             margin-top: 5px;
         }
     }
+
+    &.cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .product-facts {

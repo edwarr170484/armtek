@@ -22,6 +22,36 @@
     align-items: stretch;
     gap: 30px;
     background: var(--color-white);
+    flex-grow: 1;
+
+    &.empty {
+        background: #E6E2E299;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .card-title {
+            padding-right: 0;
+            margin-bottom: 56px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        & .card-buttons {
+            margin-top: 0;
+            justify-content: center;
+
+            & .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+                width: 330px;
+                height: 64px;
+            }
+        }
+    }
 
     & .card-title {
         font-weight: 700;

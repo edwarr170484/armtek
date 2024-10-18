@@ -43,9 +43,9 @@ class CatalogController extends Controller
     {
         if($name){
             return view('catalog.program', ['breadcrumbs' => [
-                                                            '/trainings' => 'Тренинги', '/trainings/training' => 'Подбор автозапчастей легкового автомобиля. Базовый уровень'], 
-                                                            'title' => 'Подбор автозапчастей легкового автомобиля. Базовый уровень', 
-                                                            'image' => '/img/banners/training-banner.png']);
+                                                            '/trainings' => 'Тренинги', '/trainings/training' => 'Легковая программа. Базовый уровень'], 
+                                                            'title' => 'Легковая программа. Базовый уровень', 
+                                                            'image' => '/img/banners/program-banner.jpg']);
         } else {
             return view('catalog.programs', ['breadcrumbs' => [
                                                             '/trainings' => 'Комплексные программы'], 
