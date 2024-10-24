@@ -15,6 +15,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get("/cookie", "cookie");
     Route::get("/payments", "payments");
     Route::get("/sales", "sales")->name('sales');
+    Route::get("/rent", "rent");
 });
 
 Route::controller(ContactController::class)->group(function(){

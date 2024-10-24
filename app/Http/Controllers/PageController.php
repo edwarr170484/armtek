@@ -43,4 +43,9 @@ class PageController extends Controller
     {
         return view('page.sales', ['breadcrumbs' => ['/sales' => 'Акции'], 'title' => '', 'image' => '/img/banners/sales-banner.jpg']);
     }
+
+    public function rent(Request $request): View
+    {
+        return view('page.rent', ['breadcrumbs' => ['/rent' => 'Аренда'], 'title' => 'Аренда']);
+    }
 }

@@ -19,7 +19,7 @@
                     <ul>
                         <li><a href="/about" class="active">О нас</a></li>
                         <li>
-                            <a href="">Услуги</a>
+                            <a href="javascript:void(0)">Услуги</a>
                             <ul>
                                 <li><a href="/trainings">Тренинги</a></li>
                                 <li><a href="/courses">Электронные курсы</a></li>
@@ -35,7 +35,7 @@
                                 Акции
                             </a>
                         </li>
-                        <li><a href="">Аренда</a></li>
+                        <li><a href="/rent">Аренда</a></li>
                         <li><a href="/certificates">Подарочные сертификаты</a></li>
                     </ul>
                 </nav>
@@ -87,7 +87,7 @@
                         <li><a href="/trainings">Тренинги</a></li>
                         <li><a href="/contacts">Контакты</a></li>
                         <li><a href="/payments">Оплата</a></li>
-                        <li><a href="">Аренда</a></li>
+                        <li><a href="/rent">Аренда</a></li>
                     </ul>
                     <ul>
                         <li><a href="">Клиенту</a></li>

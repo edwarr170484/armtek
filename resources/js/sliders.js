@@ -121,4 +121,12 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.rent-slider').owlCarousel({
+        margin: 17,
+        nav: true,
+        items: 2,
+        navText: navButtons,
+        navContainer: $("#rent-slider")
+    });
 });
