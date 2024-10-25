@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\CheckoutController;
 
 Route::controller(PageController::class)->group(function () {
     Route::get("/", "index");
@@ -27,6 +28,10 @@ Route::controller(CatalogController::class)->group(function(){
     Route::get("/trainings/{name?}", "trainings");
     Route::get("/programs/{name?}", "programs");
     Route::get("/certificates","certificates");
+});
+
+Route::controller(CheckoutController::class)->prefix('checkout')->group(function(){
+    Route::get("/cart", "cart");
 });
 
 Route::get('/dashboard', function () {
