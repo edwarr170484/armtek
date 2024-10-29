@@ -69,6 +69,7 @@
             &>img {
                 object-fit: cover;
                 border-radius: 50px;
+                height: 100%;
 
                 &.sale-strips {
                     border-radius: 0;
@@ -132,12 +133,25 @@
             & h3 {
                 margin-bottom: 198px;
             }
+
+            @media(max-width:1480px) {
+                display: none;
+            }
         }
 
         & .sales-block:nth-child(3) {
             grid-column: 4/6;
             padding-left: 44px;
             background: url('../img/Settings.png') 100% center no-repeat var(--color-braun-light);
+
+            @media(max-width:1780px) {
+                background-size: 170px auto;
+                background-position: 100% bottom;
+            }
+
+            @media(max-width:1480px) {
+                grid-column: 3 / span 3;
+            }
 
             @include lg {
                 background: url('../img/Settings.png') calc(100% - 60px) center no-repeat var(--color-braun-light);
@@ -153,6 +167,15 @@
             grid-column: 4/6;
             padding-left: 44px;
             background: url('../img/Note.png') 100% center no-repeat var(--color-braun-light);
+
+            @media(max-width:1780px) {
+                background-size: 170px auto;
+                background-position: 100% bottom;
+            }
+
+            @media(max-width:1480px) {
+                grid-column: 3 / span 3;
+            }
 
             & h3 {
                 text-align: left;

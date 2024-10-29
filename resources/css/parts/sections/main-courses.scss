@@ -1,4 +1,6 @@
 .popular-courses {
+    overflow: hidden;
+
     & .container {
         display: block;
 
@@ -7,16 +9,18 @@
         }
     }
 
-    & .block-header {
-        background: var(--color-white);
-        max-width: $max-lg-width;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 
     @include lg {
         & .owl-dots {
             margin-top: 30px !important;
+        }
+
+        & .block-header {
+            background: var(--color-white);
+            max-width: $max-lg-width;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -63,6 +67,27 @@
         & .owl-navigation {
             position: relative;
             top: -17px;
+        }
+
+        & h3 {
+            position: relative;
+            z-index: 2;
+        }
+
+        & p {
+            position: relative;
+            z-index: 2;
+        }
+
+        &:before {
+            content: " ";
+            display: block;
+            width: 200%;
+            height: 100%;
+            left: -50px;
+            top: 0;
+            background: var(--color-braun-light);
+            position: absolute;
         }
     }
 }

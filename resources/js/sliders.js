@@ -9,7 +9,7 @@ $(document).ready(function () {
             0: {
                 items: 2
             },
-            992: {
+            1480: {
                 items: 3
             }
         },
@@ -25,7 +25,7 @@ $(document).ready(function () {
             0: {
                 items: 2
             },
-            992: {
+            1180: {
                 items: 3
             }
         },
@@ -84,18 +84,29 @@ $(document).ready(function () {
         margin: 30,
         nav: true,
         items: 1,
+        dots: false,
         navText: navButtons,
         navContainer: $("#main-slider")
     });
 
     $('.team-slider').owlCarousel({
-        center: true,
         loop: true,
         margin: 50,
         nav: true,
         items: 3,
         navText: navButtons,
-        navContainer: $("#team-slider")
+        navContainer: $("#team-slider"),
+        responsive: {
+            0: {
+                items: 1
+            },
+            1200: {
+                items: 2
+            },
+            1500: {
+                items: 3
+            }
+        },
     });
 
     $('.product-same-slider').owlCarousel({

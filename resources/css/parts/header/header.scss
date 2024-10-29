@@ -25,10 +25,16 @@ header {
         & img {
             width: 174px;
 
+            @media(max-width:1140px) {
+                max-width: 140px;
+            }
+
             @include lg {
                 max-width: 216px;
             }
         }
+
+
     }
 
     &.fixed {

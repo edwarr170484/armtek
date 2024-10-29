@@ -7,7 +7,7 @@ header .cart {
 
     & .number {
         position: absolute;
-        top: -11px;
+        top: 0px;
         left: -9px;
         width: 22px;
         height: 22px;
@@ -32,6 +32,10 @@ header .cart {
     }
 
     & svg {
+        @media(max-width:1140px) {
+            height: 30px;
+        }
+
         @include lg {
             height: 27px;
         }

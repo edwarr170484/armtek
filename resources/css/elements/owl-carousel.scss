@@ -67,8 +67,16 @@
             align-items: center;
             justify-content: center;
 
+            @media(max-width:1300px) {
+                font-size: 20px;
+                line-height: 30px;
+                height: 90px;
+            }
+
             @include lg {
                 height: 65px;
+                font-size: 16px;
+                line-height: 22px;
             }
         }
     }

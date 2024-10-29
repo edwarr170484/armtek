@@ -58,7 +58,29 @@
 
         &.button {
             color: var(--color-white);
+
+            @media(max-width:1199px) {
+                padding: 5.5px 15px 4.5px;
+            }
         }
+
+        @media(max-width:1320px) {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        @media(max-width:1140px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    @media(max-width:1480px) {
+        gap: 20px;
+    }
+
+    @media(max-width:1199px) {
+        gap: 10px
     }
 
     @include lg {

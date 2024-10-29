@@ -12,6 +12,10 @@
     position: relative;
     z-index: 2;
 
+    @media(max-width:1140px) {
+        background: url('../img/smartphone.png') 113% 100% no-repeat var(--color-white);
+    }
+
     @include lg {
         background: var(--color-white);
         padding: 23px 32px 12px;
@@ -37,6 +41,18 @@
 
     & .form-rows {
         max-width: 724px;
+
+        @media(max-width:1260px) {
+            max-width: 620px;
+        }
+
+        @media(max-width:1160px) {
+            max-width: 500px;
+        }
+
+        @include lg {
+            max-width: 100%;
+        }
 
         & .form-row:last-child {
             margin-top: 10px;

@@ -6,12 +6,19 @@
     max-width: 380px;
     margin-left: auto;
 
+    &.mobile {
+        display: none;
+    }
+
     @include lg {
         display: none;
 
         &.mobile {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
             width: fit-content;
+
         }
     }
 }
@@ -44,5 +51,9 @@
     @include lg {
         align-items: center;
         gap: 11px;
+
+        & svg {
+            margin-top: 0;
+        }
     }
 }
