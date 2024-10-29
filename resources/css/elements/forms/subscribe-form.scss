@@ -12,11 +12,27 @@
     position: relative;
     z-index: 2;
 
+    @include lg {
+        background: var(--color-white);
+        padding: 23px 32px 12px;
+    }
+
     & h3 {
         font-family: $font-play;
         line-height: 22px;
         margin: 0;
         padding: 0;
+
+        @include lg {
+            font-size: 20px;
+        }
+    }
+
+    & p {
+        @include lg {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     & .form-rows {
@@ -31,5 +47,12 @@
         font-family: $font-play;
         font-weight: 700;
         padding: 5.5px 40px 4.5px;
+
+        @include lg {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 0 50px;
+            height: 46px;
+        }
     }
 }

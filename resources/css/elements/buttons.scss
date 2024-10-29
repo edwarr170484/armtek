@@ -21,6 +21,16 @@
         align-items: center;
         gap: 25px;
         font-weight: 700;
+
+        @include lg {
+            gap: 6px;
+            padding: 10px 16px;
+
+            & svg {
+                width: 7px;
+                height: 11px;
+            }
+        }
     }
 }
 

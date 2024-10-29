@@ -26,6 +26,10 @@
         font-size: 32px;
         text-transform: uppercase;
         font-weight: 700;
+
+        @include lg {
+            font-size: 20px;
+        }
     }
 
     & .price-old {
@@ -34,6 +38,11 @@
         line-height: 30px;
         text-transform: uppercase;
         text-decoration: line-through;
+
+        @include lg {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     & .buttons {
@@ -45,6 +54,11 @@
         & .button {
             border-radius: 20px;
             padding: 5.5px 70px 4.5px;
+
+            @include lg {
+                font-size: 16px;
+                padding: 0 50px;
+            }
         }
     }
 }

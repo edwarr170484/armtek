@@ -17,4 +17,14 @@
     &.active {
         display: block;
     }
+
+    @include lg {
+        width: 65px;
+        height: 65px;
+        right: 15px;
+
+        & svg {
+            width: 25px;
+        }
+    }
 }

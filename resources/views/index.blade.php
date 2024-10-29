@@ -379,91 +379,86 @@
                             <div class="sales-block">
                                 <img src="/img/sales/main.png" alt="">
                                 <img src="/img/sales/sale__line.png" alt="" class="sale-strips">
-                                <div class="sale-label">
+                            </div>
+                            <div class="sales-block">
+                                <h3>Вебинар подбор ЕТК</h3>
+                                <ul class="marked-list">
+                                    <li>Изучим товарные группы</li>
+                                    <li>Научим подбору по товарным группам</li>
+                                    <li>Продолжительность: <br>2 часа</li>
+                                </ul>
+                                <div class="price">
+                                    <div class="prices">
+                                        <div class="prices-list">
+                                            <div class="price-new">100.00 byn</div>
+                                            <div class="price-old">200.00 byn</div>
+                                        </div>
+                                        <button class="button-icon">
+                                            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0497 3.76252C24.7603 2.47251 23.0111 1.74774 21.1872 1.74774C19.3632 1.74774 17.6141 2.47251 16.3247 3.76252L14.9997 5.08752L13.6747 3.76252C10.9892 1.07704 6.63515 1.07704 3.94966 3.76252C1.26418 6.44801 1.26418 10.802 3.94966 13.4875L5.27466 14.8125L14.9997 24.5375L24.7247 14.8125L26.0497 13.4875C27.3397 12.1981 28.0644 10.4489 28.0644 8.62502C28.0644 6.8011 27.3397 5.05193 26.0497 3.76252Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="" class="button button-framed">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sales-block">
+                                <h3>Вебинар пневмосистема ГА</h3>
+                                <ul class="marked-list">
+                                    <li>Изучим устройство пневмосистемы</li>
+                                    <li>Продолжительность: 8 часов</li>
+                                </ul>
+                                <div class="price">
+                                    <div class="prices">
+                                        <div class="prices-list list-inline">
+                                            <div class="price-new">150.00 byn</div>/
+                                            <div class="price-old">200.00 byn</div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="" class="button button-framed">Подробнее</a>
+                                        <button class="button-icon">
+                                            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0497 3.76252C24.7603 2.47251 23.0111 1.74774 21.1872 1.74774C19.3632 1.74774 17.6141 2.47251 16.3247 3.76252L14.9997 5.08752L13.6747 3.76252C10.9892 1.07704 6.63515 1.07704 3.94966 3.76252C1.26418 6.44801 1.26418 10.802 3.94966 13.4875L5.27466 14.8125L14.9997 24.5375L24.7247 14.8125L26.0497 13.4875C27.3397 12.1981 28.0644 10.4489 28.0644 8.62502C28.0644 6.8011 27.3397 5.05193 26.0497 3.76252Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sales-block">
+                                <h3>Сокращенный курс устройство ЛА</h3>
+                                <ul class="marked-list">
+                                    <li>Изучим устройство ЛА</li>
+                                    <li>Продолжительность: 8 часов</li>
+                                </ul>
+                                <div class="price">
+                                    <div class="prices">
+                                        <div class="prices-list list-inline">
+                                            <div class="price-new">150.00 byn</div>/
+                                            <div class="price-old">200.00 byn</div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="" class="button button-framed">Подробнее</a>
+                                        <button class="button-icon">
+                                            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0497 3.76252C24.7603 2.47251 23.0111 1.74774 21.1872 1.74774C19.3632 1.74774 17.6141 2.47251 16.3247 3.76252L14.9997 5.08752L13.6747 3.76252C10.9892 1.07704 6.63515 1.07704 3.94966 3.76252C1.26418 6.44801 1.26418 10.802 3.94966 13.4875L5.27466 14.8125L14.9997 24.5375L24.7247 14.8125L26.0497 13.4875C27.3397 12.1981 28.0644 10.4489 28.0644 8.62502C28.0644 6.8011 27.3397 5.05193 26.0497 3.76252Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sale-label">
                                     <h4>Скидка</h4>
                                     <span>20%</span>
                                     <p>при подключении 3х специалистов</p>
                                 </div>
-                            </div>
-                            <div class="sales-block">
-                                <h3>Вебинар подбор ЕТК</h3>
-                                <ul class="marked-list">
-                                    <li>Изучим товарные группы</li>
-                                    <li>Научим подбору по товарным группам</li>
-                                    <li>Продолжительность: <br>2 часа</li>
-                                </ul>
-                                <div class="price">
-                                    <div class="prices">
-                                        <div class="prices-list">
-                                            <div class="price-new">100.00 byn</div>
-                                            <div class="price-old">200.00 byn</div>
-                                        </div>
-                                        <button class="button-icon">
-                                            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0497 3.76252C24.7603 2.47251 23.0111 1.74774 21.1872 1.74774C19.3632 1.74774 17.6141 2.47251 16.3247 3.76252L14.9997 5.08752L13.6747 3.76252C10.9892 1.07704 6.63515 1.07704 3.94966 3.76252C1.26418 6.44801 1.26418 10.802 3.94966 13.4875L5.27466 14.8125L14.9997 24.5375L24.7247 14.8125L26.0497 13.4875C27.3397 12.1981 28.0644 10.4489 28.0644 8.62502C28.0644 6.8011 27.3397 5.05193 26.0497 3.76252Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div class="buttons">
-                                        <a href="" class="button button-framed">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sales-block">
-                                <h3>Вебинар пневмосистема ГА</h3>
-                                <ul class="marked-list">
-                                    <li>Изучим устройство пневмосистемы</li>
-                                    <li>Продолжительность: 8 часов</li>
-                                </ul>
-                                <div class="price">
-                                    <div class="prices">
-                                        <div class="prices-list list-inline">
-                                            <div class="price-new">150.00 byn</div>/
-                                            <div class="price-old">200.00 byn</div>
-                                        </div>
-                                    </div>
-                                    <div class="buttons">
-                                        <a href="" class="button button-framed">Подробнее</a>
-                                        <button class="button-icon">
-                                            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0497 3.76252C24.7603 2.47251 23.0111 1.74774 21.1872 1.74774C19.3632 1.74774 17.6141 2.47251 16.3247 3.76252L14.9997 5.08752L13.6747 3.76252C10.9892 1.07704 6.63515 1.07704 3.94966 3.76252C1.26418 6.44801 1.26418 10.802 3.94966 13.4875L5.27466 14.8125L14.9997 24.5375L24.7247 14.8125L26.0497 13.4875C27.3397 12.1981 28.0644 10.4489 28.0644 8.62502C28.0644 6.8011 27.3397 5.05193 26.0497 3.76252Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sales-block">
-                                <h3>Сокращенный курс устройство ЛА</h3>
-                                <ul class="marked-list">
-                                    <li>Изучим устройство ЛА</li>
-                                    <li>Продолжительность: 8 часов</li>
-                                </ul>
-                                <div class="price">
-                                    <div class="prices">
-                                        <div class="prices-list list-inline">
-                                            <div class="price-new">150.00 byn</div>/
-                                            <div class="price-old">200.00 byn</div>
-                                        </div>
-                                    </div>
-                                    <div class="buttons">
-                                        <a href="" class="button button-framed">Подробнее</a>
-                                        <button class="button-icon">
-                                            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0497 3.76252C24.7603 2.47251 23.0111 1.74774 21.1872 1.74774C19.3632 1.74774 17.6141 2.47251 16.3247 3.76252L14.9997 5.08752L13.6747 3.76252C10.9892 1.07704 6.63515 1.07704 3.94966 3.76252C1.26418 6.44801 1.26418 10.802 3.94966 13.4875L5.27466 14.8125L14.9997 24.5375L24.7247 14.8125L26.0497 13.4875C27.3397 12.1981 28.0644 10.4489 28.0644 8.62502C28.0644 6.8011 27.3397 5.05193 26.0497 3.76252Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="sales-slide">
                             <div class="sales-block">
                                 <img src="/img/sales/main.png" alt="">
-                                <div class="sale-label">
-                                    <h4>Скидка</h4>
-                                    до <span>20%</span>
-                                    <p>при подключении 3х специалистов</p>
-                                </div>
                             </div>
                             <div class="sales-block">
                                 <h3>Вебинар подбор ЕТК</h3>
@@ -534,6 +529,11 @@
                                         </button>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="sale-label">
+                                <h4>Скидка</h4>
+                                <span>20%</span>
+                                <p>при подключении 3х специалистов</p>
                             </div>
                         </div>
                     </div>

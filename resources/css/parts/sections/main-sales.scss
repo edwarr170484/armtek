@@ -4,6 +4,10 @@
     & .owl-navigation {
         bottom: -14px;
     }
+
+    @include lg {
+        margin-bottom: 60px;
+    }
 }
 
 .sales-slider {
@@ -11,6 +15,10 @@
 
     & .owl-stage {
         padding-top: 100px;
+
+        @include lg {
+            padding-top: 190px;
+        }
     }
 
     & .sales-slide {
@@ -39,6 +47,16 @@
 
             & .price {
                 margin-top: auto;
+
+                & .prices {
+                    margin-top: 13px;
+                    margin-bottom: 17px;
+                }
+            }
+
+            @include lg {
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
         }
 
@@ -60,43 +78,50 @@
                 }
             }
 
-            & .sale-label {
-                border-radius: 50%;
-                position: absolute;
-                top: -100px;
+
+        }
+
+        & .sale-label {
+            border-radius: 50%;
+            position: absolute;
+            top: -100px;
+            left: 26%;
+            transform: rotate(10deg);
+            width: 200px;
+            height: 200px;
+            font-family: $font-play;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background: var(--color-yellow);
+            z-index: 10;
+
+            & h4 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            & span {
+                font-size: 55px;
+
+                &:before {
+                    content: "до ";
+                    font-size: 20px;
+                }
+            }
+
+            & p {
+                margin-bottom: 0;
+            }
+
+            @include lg {
+                left: auto;
                 right: 25px;
-                transform: rotate(10deg);
-                width: 200px;
-                height: 200px;
-                font-family: $font-play;
-                font-size: 16px;
-                line-height: 18px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                text-align: center;
-                background: var(--color-yellow);
-                z-index: 10;
-
-                & h4 {
-                    font-size: 32px;
-                    margin-bottom: 30px;
-                }
-
-                & span {
-                    font-size: 55px;
-
-                    &:before {
-                        content: "до ";
-                        font-size: 20px;
-                    }
-                }
-
-                & p {
-                    margin-bottom: 0;
-                }
             }
         }
 
@@ -114,6 +139,10 @@
             padding-left: 44px;
             background: url('../img/Settings.png') 100% center no-repeat var(--color-braun-light);
 
+            @include lg {
+                background: url('../img/Settings.png') calc(100% - 60px) center no-repeat var(--color-braun-light);
+            }
+
             & h3 {
                 text-align: left;
                 margin-bottom: 30px;
@@ -128,6 +157,33 @@
             & h3 {
                 text-align: left;
                 margin-bottom: 30px;
+            }
+
+            @include lg {
+                background: url('../img/Note.png') calc(100% - 60px) center no-repeat var(--color-braun-light);
+            }
+        }
+
+        @include lg {
+            display: flex;
+            flex-direction: column;
+
+            & .sales-block:first-child {
+                height: 350px;
+                overflow: hidden;
+
+                & img {
+                    height: 100%;
+                    object-fit: cover;
+
+                    &.sale-strips {
+                        bottom: -120px;
+                    }
+                }
+            }
+
+            & .sales-block:nth-child(2) {
+                display: none;
             }
         }
     }

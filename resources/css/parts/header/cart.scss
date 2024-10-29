@@ -1,3 +1,7 @@
+header .cart {
+    margin-bottom: 0;
+}
+
 .cart {
     position: relative;
 
@@ -15,5 +19,21 @@
         line-height: 100%;
         color: var(--color-white);
         font-family: $font-open;
+
+        @include lg {
+            font-size: 10px;
+            font-weight: 600;
+            width: 13px;
+            height: 13px;
+            top: 3px;
+            left: 0px;
+        }
+
+    }
+
+    & svg {
+        @include lg {
+            height: 27px;
+        }
     }
 }

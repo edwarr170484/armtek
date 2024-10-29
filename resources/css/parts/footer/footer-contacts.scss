@@ -5,6 +5,15 @@
     width: 100%;
     max-width: 380px;
     margin-left: auto;
+
+    @include lg {
+        display: none;
+
+        &.mobile {
+            display: block;
+            width: fit-content;
+        }
+    }
 }
 
 .footer-contact {
@@ -19,11 +28,21 @@
         gap: 10px;
         font-size: 22px;
         line-height: 33px;
+
+        @include lg {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     & svg {
         width: 24px;
         flex-shrink: 0;
         margin-top: 8px;
+    }
+
+    @include lg {
+        align-items: center;
+        gap: 11px;
     }
 }

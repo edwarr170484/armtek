@@ -16,6 +16,10 @@
         & a {
             line-height: 22px;
         }
+
+        @include lg {
+            display: none;
+        }
     }
 
     & ul:last-child {
@@ -26,5 +30,10 @@
         font-size: 22px;
         line-height: 33px;
         color: var(--color-white);
+
+        @include lg {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 }

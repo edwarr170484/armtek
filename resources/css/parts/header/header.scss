@@ -24,6 +24,10 @@ header {
 
         & img {
             width: 174px;
+
+            @include lg {
+                max-width: 216px;
+            }
         }
     }
 
@@ -31,5 +35,60 @@ header {
 
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
+    }
+
+    & .menu-toggler {
+        border: none;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 32px;
+        height: 25px;
+
+        & span {
+            display: block;
+            border-radius: 4px;
+            width: 100%;
+            position: absolute;
+            height: 3px;
+            background: var(--color-black-medium);
+            left: 0;
+            top: 50%;
+            transform-origin: center center;
+            transform: translateY(-50%);
+            transition: all 0.2s linear;
+            border: 1px solid var(--color-black-medium);
+        }
+
+        & span:first-child {
+            top: 0;
+            transform: none;
+        }
+
+        & span:last-child {
+            top: auto;
+            bottom: 0;
+            transform: none;
+        }
+
+        &.opened {
+            & span:nth-child(2) {
+                display: none;
+            }
+
+            & span:first-child {
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+            }
+
+            & span:last-child {
+                top: 50%;
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
     }
 }

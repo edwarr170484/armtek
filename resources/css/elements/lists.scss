@@ -16,6 +16,14 @@
             content: " ";
             flex-shrink: 0;
             margin-top: 7px;
+
+            @include lg {
+                margin-top: 3px;
+            }
+        }
+
+        @include lg {
+            gap: 9px;
         }
     }
 }

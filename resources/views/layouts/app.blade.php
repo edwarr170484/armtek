@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
@@ -38,6 +38,9 @@
                         <li><a href="/rent">Аренда</a></li>
                         <li><a href="/certificates">Подарочные сертификаты</a></li>
                     </ul>
+                    <form action="">
+                        <input type="text" class="form-control" placeholder="Введите запрос">
+                    </form>
                 </nav>
                 <ul class="header-tools">
                     <li><a href="/login">Войти</a></li>
@@ -49,6 +52,13 @@
                             </svg>
                             <span class="number bg-orange">0</span>
                         </a>
+                    </li>
+                    <li>
+                        <button class="menu-toggler" id="menu-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -122,6 +132,42 @@
                         </svg>
                         <address>
                             7600, 375 (29) 130 5 233
+                        </address>
+                    </div>
+                    <div class="footer-socials">
+                        <ul>
+                            <li><a href=""><img src="/img/icons/socials/instagram.svg" alt=""></a></li>
+                            <li><a href=""><img src="/img/icons/socials/telegram.svg" alt=""></a></li>
+                            <li><a href=""><img src="/img/icons/socials/viber.svg" alt=""></a></li>
+                            <li><a href=""><img src="/img/icons/socials/email.svg" alt=""></a></li>
+                            <li><a href=""><img src="/img/icons/socials/whatsapp.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contacts mobile">
+                    <div class="footer-contact">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <address>
+                            Минск
+                        </address>
+                    </div>
+                    <div class="footer-contact">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0004 16.92V19.92C21.0027 20.4831 20.7675 21.0211 20.3525 21.4018C19.9375 21.7825 19.3813 21.9707 18.8204 21.92C15.7433 21.5856 12.7874 20.5341 10.1904 18.85C7.77426 17.3146 5.72576 15.2661 4.19043 12.85C2.50041 10.2412 1.44867 7.27097 1.12043 4.17998C1.0699 3.62085 1.2567 3.06623 1.63519 2.6516C2.01369 2.23697 2.54902 2.0005 3.11043 1.99998H6.11043C7.11429 1.9901 7.96993 2.72594 8.11043 3.71998C8.23705 4.68004 8.47188 5.6227 8.81043 6.52998C9.08516 7.26085 8.90944 8.08478 8.36043 8.63998L7.09043 9.90998C8.51398 12.4135 10.5869 14.4864 13.0904 15.91L14.3604 14.64C14.9156 14.091 15.7396 13.9152 16.4704 14.19C17.3777 14.5285 18.3204 14.7634 19.2804 14.89C20.286 15.0318 21.0256 15.9048 21.0004 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <address>
+                            7600
+                        </address>
+                    </div>
+                    <div class="footer-contact">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0004 16.92V19.92C21.0027 20.4831 20.7675 21.0211 20.3525 21.4018C19.9375 21.7825 19.3813 21.9707 18.8204 21.92C15.7433 21.5856 12.7874 20.5341 10.1904 18.85C7.77426 17.3146 5.72576 15.2661 4.19043 12.85C2.50041 10.2412 1.44867 7.27097 1.12043 4.17998C1.0699 3.62085 1.2567 3.06623 1.63519 2.6516C2.01369 2.23697 2.54902 2.0005 3.11043 1.99998H6.11043C7.11429 1.9901 7.96993 2.72594 8.11043 3.71998C8.23705 4.68004 8.47188 5.6227 8.81043 6.52998C9.08516 7.26085 8.90944 8.08478 8.36043 8.63998L7.09043 9.90998C8.51398 12.4135 10.5869 14.4864 13.0904 15.91L14.3604 14.64C14.9156 14.091 15.7396 13.9152 16.4704 14.19C17.3777 14.5285 18.3204 14.7634 19.2804 14.89C20.286 15.0318 21.0256 15.9048 21.0004 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <address>
+                            375 (29) 130 5 233
                         </address>
                     </div>
                     <div class="footer-socials">

@@ -2,7 +2,7 @@
     margin-bottom: 90px;
     margin-top: -130px;
     position: relative;
-    z-index: 3;
+    z-index: 100;
 
     & .container {
         display: block;
@@ -14,6 +14,10 @@
 
     & .owl-navigation {
         bottom: -14px;
+
+        @include lg {
+            bottom: -9px;
+        }
     }
 
     & .programms-navigation {
@@ -21,6 +25,7 @@
         background-color: var(--color-white);
         border-radius: 100px;
         margin-bottom: 79px;
+
 
         & a {
             font-family: $font-play;
@@ -40,6 +45,23 @@
                 background-color: var(--color-orange);
                 color: var(--color-white);
             }
+
+            @include lg {
+                font-size: 16px;
+                line-height: 24px;
+                width: 229px;
+                padding: 25px 15px;
+            }
+        }
+
+        & li:last-child a {
+            @include lg {
+                width: 180px;
+            }
+        }
+
+        @include lg {
+            margin-bottom: 40px;
         }
     }
 
@@ -59,5 +81,10 @@
                 opacity: 1;
             }
         }
+    }
+
+    @include lg {
+        margin-top: -40px;
+        margin-bottom: 40px;
     }
 }

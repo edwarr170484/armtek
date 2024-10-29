@@ -1,6 +1,23 @@
 .popular-courses {
     & .container {
         display: block;
+
+        @include lg {
+            max-width: 100%;
+        }
+    }
+
+    & .block-header {
+        background: var(--color-white);
+        max-width: $max-lg-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include lg {
+        & .owl-dots {
+            margin-top: 30px !important;
+        }
     }
 }
 
@@ -18,10 +35,34 @@
         font-family: $font-play;
         font-size: 32px;
         line-height: 48px;
+
+        @include lg {
+            font-size: 24px;
+            line-height: 36px;
+        }
     }
 
     & p {
         margin-top: 15px;
         margin-bottom: 20px;
+    }
+
+    @include lg {
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 19px 0 5px;
+        position: relative;
+        margin-bottom: 35px;
+
+        &>* {
+            max-width: $max-lg-width;
+            margin: 0 auto;
+        }
+
+        & .owl-navigation {
+            position: relative;
+            top: -17px;
+        }
     }
 }

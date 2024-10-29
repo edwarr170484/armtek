@@ -1,3 +1,32 @@
 @mixin transition($prop, $time) {
     transition: $prop $time linear;
 }
+
+$screen-sm-max: 575.98px;
+$screen-md-max: 767.98px;
+$screen-lg-max: 991.98px;
+$screen-xl-max: 1199.98px;
+
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}

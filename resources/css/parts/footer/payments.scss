@@ -3,4 +3,12 @@
     align-items: center;
     gap: 15px;
     margin-top: 16px;
+
+    @include lg {
+        gap: 10px;
+
+        & img {
+            height: 33px;
+        }
+    }
 }

@@ -1,11 +1,12 @@
 @import 'owl.carousel';
 
+@import './mixins/mixins.scss';
 @import './vendor/normalize.css';
 @import './fonts.scss';
 @import './variables.scss';
 @import './layout.scss';
 @import './common.scss';
-@import './mixins/mixins.scss';
+
 
 @import './parts/header/header.scss';
 @import './parts/footer/footer.scss';
@@ -59,6 +60,11 @@ body {
         & main {
             padding-bottom: 45px;
         }
+    }
+
+    @include lg {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
